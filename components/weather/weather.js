@@ -7,7 +7,7 @@ const check_prime = async()=>{
     if(day === 1){
         return false
     }else{
-        for(let i=2;i<Math.sqrt(day);i++){
+        for(let i=2;i<=Math.sqrt(day);i++){
             if(day % i ==0){
                 return false;
             }
