@@ -25,10 +25,10 @@ exports.get_weather_data=async(city)=>{
             return response.data
 
         }else{
-            return "Date is not prime so no date"
+            return {result:"Date is not prime so no date"}
         }
     }catch(err){
-        return err.response.data.message;
+        return {err:err.response.data.message};
     }
 
 }
